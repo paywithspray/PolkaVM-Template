@@ -1,0 +1,29 @@
+{
+  "name": "polkavm-template",
+  "author": "marco bahn",
+  "description": "a polkadot vm template, ready to use with hardhat",
+  "keywords": ["polkadot", "hardhat", "template"],
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "node": "hardhat node",
+    "deploy": "hardhat ignition deploy ./ignition/modules/MyToken.ts --network localhost",
+    "deploy:local": "hardhat ignition deploy ./ignition/modules/MyToken.ts --network localhost",
+    "deploy:hardhat": "hardhat ignition deploy ./ignition/modules/MyToken.ts --network hardhat"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@parity/hardhat-polkadot": "^0.1.9",
+    "hardhat": "^2.26.0",
+    "dockerode": "^4.0.6",
+    "run-container": "^2.0.12",
+    "lru-cache": "^11.1.0",
+    "polkadot-api": "1.15.2",
+    "ws": "^8.18.0"
+  }
+}
